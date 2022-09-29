@@ -14,6 +14,24 @@ app.get("/main",(req, res)=>{
 
 });
 
+app.get("/software", (req,res)=> {
+    return(
+        res.send("Here's some software i've worked on")
+    )
+})
+
+app.get("/photography", (req,res)=> {
+    return(
+        res.send("Look at these pictures of Norway I took")
+    )
+})
+
+app.get("/music", (req,res)=> {
+    return(
+        res.send("Music will be uploaded soon")
+    )
+})
+
 
 export const api = functions.https.onRequest(app)
 
